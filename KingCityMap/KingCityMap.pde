@@ -177,7 +177,7 @@ void mousePressed(){
         return;
     }
     
-    //Change 
+    //Change attribute
     if(buttons.get(butByTxt("Change Att")).clicked(mouseX, mouseY)){
 
         return;
