@@ -1,0 +1,27 @@
+Summary
+    This is a program to keep track of combat in DND. Its main functions are to track positioning and HP. 
+    To use this for your own campaign, you will have to add your own structures, player, and potentially powers.
+    This means that using this tool will most likely require some java programming knowledge.
+Requirements
+    You must download proccesing 4, and then open your map in the built in editor.
+Features:
+    Player: Stores player postions and HPs. Use the function fillPlayers() to add or remove them
+    Table: a table at the top left keeps track of the distance from each character to each other
+    Revival: When a character dies, they will appear at the top right. They can be revived with a left click
+    Temporary Summons: Temporary summons appear as grey circles. They can only be added and deleted
+    Structures: Shows a visual representation of the map. Use fillStructs() to add or remove structures
+Controls
+    The following four controls are in the upper left corner
+        Undo: will undo *most* player actions
+        Inp1: click on this to reset it, then type in your input and hit enter. This will be used for player actions
+        Inp2: same as Inp1
+        Table: toggles on or off the table
+    To access a players control, click on that player. This will cause the following 6 buttons to appear.
+    Certain commands will only work on certain characters
+        Move: move in Inp1 feet in the direction of Inp2 (in degrees)
+        Port: move to the (x,y) position of (Inp1, Inp2)
+        Change Max: change a characters maximum HP to Inp1, and scale their current HP to the same percent
+        Change HP: add the value of Inp1 to a characters current HP
+        Clone: Clone a character. The clone will appear Inp1 feet away in the direction of Inp2 (in degrees)
+        Change Att: not implemented
+    Temporary summons can be added by right clicking, and deleted by left clicking on them
